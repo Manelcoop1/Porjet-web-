@@ -4,7 +4,7 @@
 session_start();
 
 // 2. On inclut la base de données et le menu (Header)
-require_once 'config/db.php';
+require_once 'views/layouts/db.php';
 require_once 'views/layouts/header.php';
 ?>
 
