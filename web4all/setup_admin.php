@@ -1,5 +1,5 @@
 <?php
-require_once 'config/db.php';
+require_once 'views/layouts/db.php';
 
 $email = 'admin@viacesi.fr';
 $mot_de_passe_clair = 'admin123';
