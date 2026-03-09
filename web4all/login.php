@@ -1,7 +1,7 @@
 <?php
 // 1. Démarrer la session TOUJOURS tout en haut du fichier
 session_start();
-require_once 'config/db.php';
+require_once 'views/layouts/db.php';
 
 $erreur = ''; // Variable pour stocker les messages d'erreur
 
