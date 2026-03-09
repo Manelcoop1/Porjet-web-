@@ -1,4 +1,4 @@
-<?php include('db_connect.php'); ?>
+
 <?php
 // 1. On démarre la session en TOUT PREMIER (obligatoire)
 session_start();
