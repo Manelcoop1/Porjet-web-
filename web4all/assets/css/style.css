@@ -1,0 +1,120 @@
+/* assets/css/style.css */
+
+/* Reset basique pour éviter les marges par défaut des navigateurs */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Prend au minimum toute la hauteur de l'écran */
+    background-color: #f4f7f6;
+    color: #333;
+}
+
+/* --- HEADER & NAVIGATION --- */
+header {
+    background-color: #0056b3;
+    color: white;
+    padding: 1rem;
+}
+
+nav {
+    display: flex;
+    flex-direction: column; /* Mobile First : les liens s'empilent sur téléphone */
+    gap: 10px;
+    align-items: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+}
+
+nav a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+}
+
+/* --- CONTENU PRINCIPAL --- */
+main {
+    flex: 1; /* Le main prend tout l'espace disponible entre le header et le footer */
+    padding: 2rem 1rem;
+    max-width: 1200px;
+    margin: 0 auto; /* Centre le contenu sur les grands écrans */
+    width: 100%;
+}
+
+/* --- FOOTER --- */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: auto;
+}
+
+/* --- ADAPTATION POUR PC (Tablette et Bureau) --- */
+@media (min-width: 768px) {
+    nav {
+        flex-direction: row; /* Sur grand écran, les liens se mettent côte à côte */
+        justify-content: space-between;
+    }
+}
+
+/* --- FORMULAIRE DE CONNEXION --- */
+.login-container {
+    max-width: 400px;
+    margin: 3rem auto;
+    padding: 2rem;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    text-align: left;
+}
+
+.login-container h2 {
+    text-align: center;
+    color: #0056b3;
+    margin-bottom: 1.5rem;
+}
+
+.login-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.login-container label {
+    font-weight: bold;
+    color: #333;
+}
+
+.login-container input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.login-container button {
+    padding: 12px;
+    background-color: #0056b3;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.login-container button:hover {
+    background-color: #004494;
+}
